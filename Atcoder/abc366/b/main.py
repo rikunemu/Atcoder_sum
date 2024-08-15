@@ -15,9 +15,19 @@ MOD=10**9+7
 INF=float('inf')
 #float型の無限大inf
 def resolve():
-    n=int(input())
+    N=int(input())
     #a, b = map(int, input().split())
     #A = list(map(int, input().split()))
+    S = [input() for _ in range(N)]
+    M = max(map(len, S))
+    T = [["*"] * N for _ in range(M)]
+    for i in range(N):
+        for j in range(len(S[i])):
+            T[j][N - i - 1] = S[i][j]
+    for i in range(M):
+        while T[i][-1] == "*":
+            T[i].pop()
+        print("".join(T[i]))
 
 if __name__ == "__main__":
     resolve()
