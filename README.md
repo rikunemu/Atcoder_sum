@@ -29,3 +29,10 @@
 1. acc config default-task-choice all
 
 1. acc config default-template python
+
+## その他
+
+- 現在、Atcoderのセキュリティ強化の影響によりacc submitができない。  
+その場合は、acc submitの手順は手動で行う必要あり。
+
+- acc loginができないケースが発言([対処法](https://kaiyou9.com/acc_and_oj_login_failed/))
