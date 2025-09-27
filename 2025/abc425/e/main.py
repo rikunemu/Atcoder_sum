@@ -18,28 +18,15 @@ def rLS(): return list(sys.stdin.readline().rstrip().split())
 #rstripが必要なことも
 #input = lambda: sys.stdin.readline().rstrip()
 #inputの高速化、基本はいらない、入力が長いときに使用
-from sys import setrecursionlimit
-setrecursionlimit(10**7)
-if len(sys.argv) == 2:
-    sys.stdin = open(sys.argv[1])
-N=int(input())
-ok=[0]*(N+1)
-ok[0]=1
-G=[[] for _ in range(N+1)]
-def dfs(v):
-  ok[v]=1
-  for vv in G[v]:
-    if not ok[vv]:
-      dfs(vv)
+#from sys import setrecursionlimit
+#setrecursionlimit(10**7)
+MOD=10**9+7
+INF=float('inf')
+#float型の無限大inf
 def resolve():
-    for i in range(1,N+1):
-        a,b=map(int,input().split())
-        G[a].append(i)
-        G[b].append(i)
-    dfs(0)
-    print(sum(ok)-1)
-
-
+    n=int(input())
+    #a, b = map(int, input().split())
+    #A = list(map(int, input().split()))
 
 if __name__ == "__main__":
     resolve()
