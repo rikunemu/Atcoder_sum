@@ -36,3 +36,11 @@
 その場合は、acc submitの手順は手動で行う必要あり。
 
 - acc loginができないケースが発言([対処法](https://kaiyou9.com/acc_and_oj_login_failed/))
+
+## 参考
+
+- 累積和  
+[C - Rotate and Sum Query](https://atcoder.jp/contests/abc425/tasks/abc425_c)
+
+- 木問題(有向辺)  
+[C - New Skill Acquired ](https://atcoder.jp/contests/abc424/tasks/abc424_c)
