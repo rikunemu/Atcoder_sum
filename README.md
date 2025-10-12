@@ -37,6 +37,13 @@
 
 - acc loginができないケースが発言([対処法](https://kaiyou9.com/acc_and_oj_login_failed/))
 
+## Python 入力
+
+- edgeの入力(木構造みたいな形)
+```python
+edges = [tuple(map(int, input().split())) for _ in range(M)]
+```
+
 ## 参考
 
 - 累積和  
@@ -44,3 +51,6 @@
 
 - 木問題(有向辺)  
 [C - New Skill Acquired ](https://atcoder.jp/contests/abc424/tasks/abc424_c)
+
+- 2部グラフ、bit全探索
+[C - Bipartize](https://atcoder.jp/contests/abc427/tasks/abc427_c)
