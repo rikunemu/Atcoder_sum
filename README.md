@@ -44,13 +44,24 @@
 edges = [tuple(map(int, input().split())) for _ in range(M)]
 ```
 
+- 迷路問題
+```python
+H,W=map(int, input().split())
+S=[input() for i in range(H)]
+```
+
 ## 参考
 
 - 累積和  
 [C - Rotate and Sum Query](https://atcoder.jp/contests/abc425/tasks/abc425_c)
+[C - Equilateral Triangle](https://atcoder.jp/contests/abc409/tasks/abc409_c)
+
 
 - 木問題(有向辺)  
 [C - New Skill Acquired ](https://atcoder.jp/contests/abc424/tasks/abc424_c)
 
 - 2部グラフ、bit全探索
 [C - Bipartize](https://atcoder.jp/contests/abc427/tasks/abc427_c)
+
+- 迷路問題、多始点BFS(幅優先探索)
+[D - Escape Route](https://atcoder.jp/contests/abc405/tasks/abc405_d)
