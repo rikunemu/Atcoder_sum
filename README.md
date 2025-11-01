@@ -65,3 +65,15 @@ S=[input() for i in range(H)]
 
 - 迷路問題、多始点BFS(幅優先探索)
 [D - Escape Route](https://atcoder.jp/contests/abc405/tasks/abc405_d)
+
+- 組み合わせ
+[C - Odd One Subsequence](https://atcoder.jp/contests/abc429/tasks/abc429_c)
+
+## コツ
+
+- C問題あたりは、変にライブラリを利用しないで解くほうが解ける確率が高い
+
+- 3次元配列の重複排除
+``` python
+{3次元リスト} = [json.loads(x) for x in set(json.dumps(sub) for sub in {3次元リスト})]
+```

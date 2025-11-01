@@ -51,19 +51,11 @@ INF=float('inf')
 n=int(input())
 #a, b = map(int, input().split())
 A = rLI()
-c = Counter(A)
-sum_comb_c = cmb(n, 3)
-cnt_count = len(c)
-for i in range(len(c)):
-    cnt_common = c.most_common()[i][1]
-    if cnt_common >= 3:
-        sum_comb_c -= cmb(cnt_common, 3)
-    else:
-        break
-for i in range(len(c)):
-    cnt_common = c.most_common()[i][1]
-    n -= cnt_common
-    cnt_count -= 1
-    if cnt_count >= 2:
-        sum_comb_c -= cmb(n, 2) * cnt_common
+sum_comb_c = 0
+CNT_A = [0]*(n+1)
+for a in A:
+    CNT_A[a] += 1
+for i in CNT_A:
+    if i >= 2:
+        sum_comb_c += (i*(i-1)//2) * (n-i)
 print(sum_comb_c)
